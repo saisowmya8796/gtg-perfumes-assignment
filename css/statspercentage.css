@@ -1,0 +1,98 @@
+/* STATS SECTION */
+.stats-section {
+  background: linear-gradient(180deg, #032e15, #016630);
+  color: #ffffff;
+  padding: 30px 0;
+
+  width: 1521px;
+  height: 170px;
+  min-width: 576px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  padding: 0px;
+  gap: 86px;
+
+  width: 1119px;
+  height: 86px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 215px;
+  height: 86px;
+}
+
+.stat-item span {
+  width: 215px;
+  height: 29px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.stat-count {
+  width: 215px;
+  height: 29px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.stat-item p {
+  width: 215px;
+  height: 38px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .stats-section {
+    width: 990px;
+    height: 340px;
+  }
+    .stats-container {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-section {
+    width: 765px;
+    height: 340px;
+  }
+    .stats-container {
+    max-width: 400px;
+  }
+}

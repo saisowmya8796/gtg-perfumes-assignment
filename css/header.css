@@ -1,0 +1,341 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0px;
+}
+
+/* Reusable */
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+.header {
+  background-image: url("../assets/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 900px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+/* GTG */
+.logo {
+  width: 125;
+  height: 47;
+  opacity: 1;
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  color: #01663099;
+  text-shadow: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16.18px;
+  color: #162456;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav a:hover {
+  color: #016630;
+}
+
+.search-shop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button - Large */
+.shop-now-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  width: 145px;
+  height: 49px;
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  border-radius: 505.644px;
+  border: none;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 18.2px;
+  line-height: 16.18px;
+}
+
+.shop-now-btn:hover {
+  opacity: 0.9;
+}
+
+.menu-button {
+  padding: 8px;
+  border: 1px solid #032e15;
+  border-radius: 5px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: flex;
+  width: 24px;
+  height: 18px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background: #032e15;
+  border-radius: 2px;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 28%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  font-family: "Inter";
+  font-size: 16px;
+  color: #162456;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav.open {
+  max-height: 400px;
+}
+
+/* section */
+.about-product {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 60px;
+  width: 692px;
+}
+
+.about-product-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.product-slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 692px;
+  margin: 60px 0px;
+}
+
+.about-award {
+  display: flex;
+  width: 356px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  gap: 8px;
+  background: linear-gradient(180deg, #032e1599, #01663099);
+}
+
+.badge {
+  padding-top: 5px;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  opacity: 0.9;
+}
+
+.slogan {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 56px;
+  font-style: Bold;
+}
+
+.product-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 545.5px;
+}
+
+.ad-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+  width: 183px;
+  height: 86px;
+}
+
+.ad-stats h1 {
+  width: 180px;
+  height: 68px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 46, 21, 0.6) 0%,
+    rgba(1, 102, 48, 0.6) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ad-stats p {
+  width: 180px;
+  height: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 104%;
+  display: flex;
+  align-items: center;
+  color: #0d542b;
+}
+
+.section-shop-now-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: 185px;
+  height: 48px;
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  border-radius: 505.644px;
+  border: none;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 18.2px;
+  line-height: 24px;
+}
+
+.section-shop-now-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background-size: contain;
+    background-position: top;
+    height: 350px;
+  }
+  .about-product {
+    padding: 0px 10px;
+    width: 520px;
+  }
+  .about-product-inner {
+    gap: 25px;
+  }
+  .product-slogan {
+    gap: 5px;
+    width: 500px;
+    margin: 6px 0px 0px 0px;
+  }
+  .about-award {
+    width: 320px;
+  }
+  .badge {
+    font-size: 14px;
+  }
+  .slogan {
+    font-size: 34px;
+  }
+  .product-stats {
+    width: 380px;
+  }
+  .ad-stats {
+    gap: 2px;
+    width: 80px;
+    height: 35px;
+  }
+  .ad-stats h1 {
+    width: 100px;
+    height: 52px;
+    font-size: 32px;
+  }
+  .ad-stats p {
+    width: 140px;
+    height: 12px;
+    font-size: 16px;
+  }
+}

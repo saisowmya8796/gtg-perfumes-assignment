@@ -1,0 +1,136 @@
+.collection-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.collection-left {
+  width: 50%;
+}
+
+.collection-right img {
+  width: 590px;
+  height: 711px;
+  border-radius: 30px;
+}
+
+.collection-title {
+  width: 626px;
+  height: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #032e15;
+  margin: 20px 0px;
+}
+
+/* Accordion Styles */
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 626px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.accordion-item.expanded {
+  height: 167px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 24px 32px;
+  width: 620px;
+  height: 78px;
+  background: #ffffff;
+  border: none;
+}
+
+/* Signature Scents */
+.accordion-header span {
+  width: 168px;
+  height: 30px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #032e15;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Accordion Content */
+.accordion-content {
+  display: none;
+  padding: 24px;
+  width: 626px;
+
+  animation: slideDown 0.25s ease-out;
+}
+
+.accordion-content.open {
+  display: block;
+}
+
+.accordion-content p {
+  width: 578px;
+  height: 41px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+}
+
+@media (max-width: 1024px) {
+  .collection-left {
+    width: 65%;
+  }
+  .collection-right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  .accordion-item.expanded {
+    height: 150px;
+  }
+  .accordion-header {
+    padding: 5px 32px;
+  }
+  .accordion-content {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .collection-section {
+    flex-direction: column;
+  }
+  .collection-left,
+  .collection-right {
+    width: 90%;
+  }
+  .collection-right img {
+    display: none;
+  }
+}

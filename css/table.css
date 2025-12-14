@@ -1,0 +1,258 @@
+/* TABLE SECTION */
+.why-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px 300px 0px;
+  width: 1520px;
+  height: auto;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 57px;
+
+  width: 950px;
+  height: 862px;
+}
+
+.head-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 39px;
+
+  width: 679.58px;
+  height: 133px;
+}
+
+.head-part p {
+  text-align: center;
+  width: 679.58px;
+  height: 50px;
+  font-family: "Oxanium";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+
+  color: #032e15;
+}
+
+.head-part h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  width: 449px;
+  height: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+
+  color: #032e15;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 22px 0px;
+  line-height: 1.4;
+}
+
+thead th {
+  border-bottom: 1px solid #666666;
+}
+
+th:first-child {
+  text-align: left;
+  width: 212.66px;
+  height: 23px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #322d2d;
+}
+
+th:first-child {
+  padding-left: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 310px;
+}
+
+thead th:nth-child(2) {
+  background-color: #f0fdf4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px dotted #666666;
+  width: 199px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+
+thead tr:first-child th:nth-child(2) img {
+  width: 88px;
+  height: 87px;
+  border-radius: 15px;
+}
+
+.gtg-text {
+  padding-left: 80px;
+  width: 108px;
+  height: 49px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #000000;
+}
+
+thead tr:first-child th:nth-child(n + 3) img {
+  width: 100px;
+  height: 88px;
+  border-radius: 16px;
+}
+
+.table-head-text {
+  padding-left: 60px;
+  padding-top: 13px;
+  width: 33px;
+  height: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #666666;
+}
+
+tbody td {
+  border-bottom: 1px solid #666666;
+}
+
+tbody tr:first-child td:nth-child(n + 2),
+tbody tr:nth-child(4) td:nth-child(n + 2) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #666666;
+}
+
+td {
+  text-align: center;
+}
+
+td:first-child {
+  padding-left: 10px;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 700;
+  color: #666666;
+}
+
+tbody tr:last-child td:nth-child(2) {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+tbody td:nth-child(2) {
+  background-color: #f0fdf4;
+  border-bottom: 1px dotted #666666;
+}
+
+td img {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.try-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 28px;
+
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  border-radius: 999px;
+  border: none;
+  color: #ffffff;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.try-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .why-table {
+    width: 100%;
+    margin: 10px 0px 220px 0px;
+  }
+
+  .table-container {
+    width: 100%;
+    height: 882px;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-table {
+    width: 100%;
+    margin: 10px 0px 60px 0px;
+  }
+  .table-container {
+    gap: 40px;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .head-part {
+    gap: 10px;
+    height: 80px;
+  }
+  .head-part h2 {
+    font-size: 28px;
+  }
+  th,
+  td {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+  .table-head-text {
+    padding-left: 30px;
+  }
+  .gtg-text {
+    padding-left: 10px;
+  }
+}

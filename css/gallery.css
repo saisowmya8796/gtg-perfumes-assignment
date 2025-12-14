@@ -1,0 +1,153 @@
+/* PRODUCT SECTION */
+.product-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 108px;
+
+  width: 1328px;
+  height: 1314.9px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 610px;
+  height: 992.99px;
+}
+
+.main-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 673px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gallery-dots {
+  position: absolute;
+  top: 600px; /* Same vertical line as arrows */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #032e15;
+  cursor: pointer;
+}
+
+.gallery-dots .dot.active-dot {
+  background: #032e15;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #032e15;
+  background: rgb(225, 220, 220);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background: #d6d6d6;
+}
+
+#leftArrow {
+  top: 600px;
+  left: 20px;
+  padding-top: 6px;
+}
+
+#rightArrow {
+  top: 600px;
+  right: 20px;
+  padding-top: 6px;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-thumbs img {
+  width: 130px;
+  height: 130px;
+  border-radius: 16px;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+}
+
+.gallery-thumbs img.active-thumb {
+  border: 2px solid #032e15;
+}
+
+@media (max-width: 1024px) {
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto; /* KEY FIX */
+    padding: 24px 16px;
+    gap: 20px;
+  }
+  .gallery {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 5px;
+  }
+  .main-image-wrapper {
+    width: 94%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* keeps image proportional */
+  }
+  .gallery-dots {
+    top: 97%;
+  }
+  #leftArrow,
+  #rightArrow {
+    top: 96%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-image-wrapper {
+    width: 92%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* keeps image proportional */
+  }
+  .gallery-dots {
+    top: 96%;
+  }
+  #leftArrow,
+  #rightArrow {
+    top: 95%;
+  }
+}
